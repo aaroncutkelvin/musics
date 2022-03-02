@@ -15,7 +15,7 @@ import MusicVideoTwoToneIcon from "@mui/icons-material/MusicVideoTwoTone";
 
 const pages = ["Home", "Hiphop", "Rap", "RnB", "Pop", "Reggae", "Soul"];
 
-function link() {
+function Links() {
   pages.map((page) => "/" + { page });
 }
 
@@ -75,7 +75,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} component={Link} to={`/${page}`}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}

@@ -138,7 +138,7 @@ const popList = [
   },
   {
     url: "https://youtu.be/aJOTlE1K90k",
-    title: "Girls liek You",
+    title: "Girls like You",
     description: "Maroon 5",
   },
   {

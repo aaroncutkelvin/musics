@@ -4,7 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 function VideoPlayer(props) {
-  return <ReactPlayer url={props.url} width="450px" controls={true} />;
+  return (
+    <ReactPlayer url={props.url} width="100%" height="100" controls={true} />
+  );
 }
 
 function Details(props) {

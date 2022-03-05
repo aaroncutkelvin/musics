@@ -8,7 +8,7 @@ import soul_heading from "../img/soul_heading.PNG";
 
 function CreateVideo(soulList) {
   return (
-    <Card sx={{ maxWidth: 450, m: 2 }}>
+    <Card sx={{ width: 1 / 4, m: 4, height: 1 / 4 }}>
       <VideoPlayer
         url={soulList.url}
         title={soulList.title}

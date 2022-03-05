@@ -8,7 +8,7 @@ import pop_heading1 from "../img/pop_heading1.PNG";
 
 function CreateVideo(popList) {
   return (
-    <Card sx={{ maxWidth: 450, m: 2 }}>
+    <Card sx={{ width: 1 / 4, m: 4, height: 1 / 4 }}>
       <VideoPlayer
         url={popList.url}
         title={popList.title}

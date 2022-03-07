@@ -15,11 +15,21 @@ function CreateVideo(soulList) {
         description={soulList.description}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h6"
+          component="div"
+          fontSize={{
+            lg: 18,
+            md: 16,
+            sm: 14,
+            xs: 12,
+          }}
+        >
           {soulList.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {soulList.description}
+          <Typography variant="body2" color="text.secondary">
+            {soulList.description}
+          </Typography>
         </Typography>
       </CardContent>
     </Card>

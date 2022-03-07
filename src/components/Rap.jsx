@@ -15,11 +15,20 @@ function CreateVideo(rapList) {
         description={rapList.description}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          variant="h6"
+          component="div"
+          fontSize={{
+            lg: 18,
+            md: 16,
+            sm: 14,
+            xs: 12,
+          }}
+        >
           {rapList.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {rapList.description}
+          <Typography variant="body2" color="text.secondary">
+            {rapList.description}
+          </Typography>
         </Typography>
       </CardContent>
     </Card>

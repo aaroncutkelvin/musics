@@ -8,18 +8,28 @@ import hiphop_heading1 from "../img/hiphop_heading1.PNG";
 
 function AddVideo(hiphopList) {
   return (
-    <Card sx={{ width: 1 / 4, m: 4, height: 1 / 4 }}>
+    <Card sx={{ width: 450, m: 2 }}>
       <VideoPlayer
         url={hiphopList.url}
         title={hiphopList.title}
         description={hiphopList.description}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h6"
+          component="div"
+          fontSize={{
+            lg: 18,
+            md: 16,
+            sm: 14,
+            xs: 12,
+          }}
+        >
           {hiphopList.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {hiphopList.description}
+          <Typography variant="body2" color="text.secondary">
+            {hiphopList.description}
+          </Typography>
         </Typography>
       </CardContent>
     </Card>

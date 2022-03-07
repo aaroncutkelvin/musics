@@ -15,11 +15,21 @@ function CreateVideo(rnbVids) {
         description={rnbVids.description}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h6"
+          component="div"
+          fontSize={{
+            lg: 18,
+            md: 16,
+            sm: 14,
+            xs: 12,
+          }}
+        >
           {rnbVids.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {rnbVids.description}
+          <Typography variant="body2" color="text.secondary">
+            {rnbVids.description}
+          </Typography>
         </Typography>
       </CardContent>
     </Card>
